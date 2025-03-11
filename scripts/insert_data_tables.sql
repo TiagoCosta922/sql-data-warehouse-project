@@ -3,6 +3,8 @@
 Note that we are creating the tables but before we truncate the table, the truncate remove all the data in the table. It is necessary for
 our case because we want to overwrite all the content, so if we on bulk the content if we run the code twice, we will append the same data twice,
 thats means we will have duplicate data, so we need remove the all data before insert the data again.
+
+we also create a store procedure because this code will run multiple times, so the best way to do that is create a store procedure
 */
 
 CREATE OR ALTER PROCEDURE bronze.load_bronze
