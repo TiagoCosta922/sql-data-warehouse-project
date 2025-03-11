@@ -1,4 +1,4 @@
-*/ 
+/*
 Purpose:
 The load_bronze stored procedure is designed to load data from CSV files into SQL Server tables in the bronze schema. This procedure performs a bulk insert into each table, overwriting any existing data. It achieves this by first truncating the table (removing all existing records) and then loading fresh data from the corresponding CSV file. This ensures that each run of the procedure will insert the latest data without duplicates.
 
